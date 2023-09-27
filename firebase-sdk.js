@@ -5,12 +5,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebas
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC9K1IMpOjSb6G3W1pqsBEfXWpjn4RwOdw",
-  authDomain: "gym-log-30c7a.firebaseapp.com",
-  projectId: "gym-log-30c7a",
-  storageBucket: "gym-log-30c7a.appspot.com",
-  messagingSenderId: "919766881018",
-  appId: "1:919766881018:web:c6685844fed38f4052af43"
+  #Enter your config details
 };
 
 // Initialize Firebase
