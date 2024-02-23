@@ -1,0 +1,294 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Add this import to your CSS file or index.js */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  margin: 0;
+  color: #fff;
+ 
+  
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+.sidebar-button {
+  background-color: #fada32;
+  color: #000;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+.sidebar-button i {
+  margin-right: 10px;
+}
+.user-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-section div {
+  background: #fada32;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.user-section div:hover {
+  background: #fada32;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+.card {
+  background-color: #262626;
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #fada32;
+}
+/* Adjust the size of the icons */
+.fas {
+  font-size: 24px;
+}
+.card img {
+  height: 150px; /* Example height, adjust as needed */
+  width: 100%; /* This will make the image take full width of the card */
+  object-fit: cover; /* This will ensure the image covers the area without stretching */
+}
+
+.sidebar {
+  background-color: #111111; /* Tailwind teal-600 */
+  width: 18rem; /* Set the width of the sidebar */
+}
+.sidebar a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Add this to your CSS file */
+.nav-button {
+  padding: 8px 16px;
+  /* Adjust the background color as needed */
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px; /* Add margin between buttons */
+}
+
+.nav-button:hover {
+  background-color: #fada32; /* Adjust the background color on hover */
+  color: #000;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  background-color: #111111; /* Tailwind teal-600 */
+  width: 18rem; /* Set the width of the sidebar */
+  position: fixed;
+  height: 100%; /* Make the sidebar full height */
+}
+
+.container-main {
+  margin-left: 18rem; /* Set the margin to be equal to the width of the sidebar */
+  flex: 1;
+}
+.content {
+  padding: 20px;
+}
+
+.bg_gray{
+  background-color: #111111;
+}
+.bg_trans{
+  background-color: transparent;
+}
+.bg_trans:hover{
+  border-color: #fada32;
+}
+
+.tracker-card-one,  .input-group {
+  background-color: #111111;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 85%;
+  margin-right: 35px;
+}
+.tracker-card-two{
+  width: 50%;
+  background-color: #111111;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.input-group input {
+  background-color: #333;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+.input-group button{
+  background-color: #333;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+.input-group button {
+  background-color: #eee727f7;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.progress-bar {
+  background-color: transparent;
+  
+  position: relative;
+  
+}
+.progress {
+  height: 20px;
+  border-radius: 20px;
+  background-color: #eee727f7;
+  position: absolute;
+
+}
+.progress-label {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.meal-list {
+  list-style: none;
+  padding: 0;
+}
+.meal-list li {
+background-color: #333;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 6px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.reset{
+background-color: #eee727f7;
+  border-radius: 205px;
+  cursor: pointer;
+  padding: 8.5px;
+  width: 100px;
+  height: 50px;
+  margin-top: 65px;
+  color: #000;
+}
+.circular-component-container {
+text-align: center; /* Centering the text below the circle */
+font-family: 'Poppins', sans-serif;
+}
+
+.circular-component {
+width: 130px; /* Size of the circle */
+height: 130px; /* Size of the circle */
+background-color: transparent; /* Transparent background */
+border-radius: 50%;
+border: 5px solid #eee727f7; /* Yellow border */
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 50px;
+margin-left: 50px;
+}
+
+.calories-value {
+color: white;
+font-size: 30px;
+}
+
+.calories-text {
+color: white;
+margin-top: 10px; /* Spacing between the circle and the text */
+margin-left: 50px;
+}
+.water-tracker {
+background-color: #111111;
+color: white;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+font-family: 'Arial', sans-serif;
+max-width: 300px;
+margin: auto;
+margin-top: 60px;
+}
+
+.controls button {
+background-color: #eee727f7;
+border: none;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+color: #333;
+font-size: 20px;
+line-height: 30px;
+margin: 0 10px;
+cursor: pointer;
+}
+
+#progress-bar {
+background-color: #444;
+width: 100px;
+height: 10px;
+display: inline-block;
+border-radius: 5px;
+overflow: hidden;
+position: relative;
+}
+
+#progress {
+background-color: #eee727f7;
+width: 0%; /* Initial progress */
+height: 100%;
+}
+
+#counter {
+margin-top: 10px;
+}
+.icon-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
